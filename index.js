@@ -2,6 +2,7 @@ btn= document.querySelector("button")
 input=document.querySelector("input")
 h5=document.querySelector("h5")
 container=document.querySelector(".container")
+img=document.querySelector("img")
 
 console.log(container)
 
@@ -11,8 +12,10 @@ btn.addEventListener("click",(e)=>{
     inp=input.value
     if (inp==="원세은"){
         h5.textContent="사랑해 ♥"
+        container.style.backgroundImage="url(./onepic.jpg)"
     }else{
         h5.textContent="Login"
+        container.style.backgroundImage="none"
     }
 })
 
@@ -46,3 +49,8 @@ window.addEventListener("resize",(e)=>{
 
     }
 })
+
+
+
+
+
